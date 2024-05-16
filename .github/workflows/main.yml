@@ -6,3 +6,13 @@ on:
   pull_request:
     branches: 
       - main
+jobs:
+  testar:
+    runs-on: ubuntu-22.04
+    strategy:
+      matrix:
+        python-version: ["3.11"]
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
