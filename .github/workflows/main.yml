@@ -2,10 +2,10 @@ name: uno-github-actions
 on: 
   push:
     branches: 
-      - main
+      - master
   pull_request:
     branches: 
-      - main
+      - master
 jobs:
   testar:
     runs-on: ubuntu-22.04
